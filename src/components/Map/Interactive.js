@@ -3,7 +3,7 @@ import { CRS, LatLngBounds } from 'leaflet';
 import { MapContainer, ImageOverlay, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import style from './Interactive.css';
-
+import { basketball, bruincard, camera } from './Icons';
 import magnifyingGlass from './Images/magnifying-glass.png';
 
 function MyMap() {
@@ -12,16 +12,38 @@ function MyMap() {
     [34.0789, -118.4352] // Northeastern coordinate
   );
 
-  const imageWidth = 4500; // Width of the magnifying glass image in pixels
-  const imageHeight = 4500; // Height of the magnifying glass image in pixels
+  const markerPositions = [
+    {
+      positionX: 0.2, // X coordinate relative to the image width (0.0 to 1.0)
+      positionY: 0.5, // Y coordinate relative to the image height (0.0 to 1.0)
+      icon: basketball,
+      popupMessage: 'Basketball Marker',
+    },
+    {
+      positionX: 0.8, // X coordinate relative to the image width (0.0 to 1.0)
+      positionY: 0.3, // Y coordinate relative to the image height (0.0 to 1.0)
+      icon: bruincard,
+      popupMessage: 'Bruincard Marker',
+    },
+    {
+      positionX: 0.6, // X coordinate relative to the image width (0.0 to 1.0)
+      positionY: 0.7, // Y coordinate relative to the image height (0.0 to 1.0)
+      icon: camera,
+      popupMessage: 'Camera Marker',
+    },
+  ];
 
-  const markerPositionX = 0.5; // Fractional X coordinate of the marker (0.0 to 1.0)
-  const markerPositionY = 0.5; // Fractional Y coordinate of the marker (0.0 to 1.0)
+  const markers = markerPositions.map(({ positionX, positionY, icon, popupMessage }) => {
+    const markerLatitude = bounds.getSouth() + positionY * (bounds.getNorth() - bounds.getSouth());
+    const markerLongitude = bounds.getWest() + positionX * (bounds.getEast() - bounds.getWest());
+    const markerPosition = [markerLatitude, markerLongitude];
 
-  const markerLatitude = bounds.getSouth() + (markerPositionY * (bounds.getNorth() - bounds.getSouth()));
-  const markerLongitude = bounds.getWest() + (markerPositionX * (bounds.getEast() - bounds.getWest()));
-
-  const markerPosition = [markerLatitude, markerLongitude];
+    return (
+      <Marker position={markerPosition} icon={icon}>
+        <Popup>{popupMessage}</Popup>
+      </Marker>
+    );
+  });
 
   return (
     <div id="map-container" style={{ height: '600px', width: '100%' }}>
@@ -32,11 +54,7 @@ function MyMap() {
         container="map-container"
       >
         <ImageOverlay url={magnifyingGlass} bounds={bounds} />
-        <Marker position={markerPosition}>
-            <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-        </Marker>
+        {markers}
       </MapContainer>
     </div>
   );
