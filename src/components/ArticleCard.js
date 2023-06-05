@@ -67,7 +67,9 @@ export default function ArticleGrid(props){
     `;
 
 
-    return(  
+    return(
+        <div>
+        {props.article_title != 'blank' &&
         <OuterContainer>
             <a href={props.article_url}>
                 <Image src={props.article_image}></Image>
@@ -76,6 +78,9 @@ export default function ArticleGrid(props){
             <Title> {props.article_title} </Title>
         
         </OuterContainer>
+        }
+        </div>
+        
 
 
     )
