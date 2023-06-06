@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Landing from "./components/Landing";
 import background from './images/background.svg'
 import SectionHeader from "./components/SectionHeader";
+import ArticleGrid from './components/ArticleGrid';
 
 function App() {
   const [ data, setData ] = useState(null);
@@ -39,6 +40,14 @@ function App() {
       <SectionHeader text="-30- COLUMNS"></SectionHeader>
       <SectionHeader text="ABOUT"></SectionHeader>
       </Container>
+      Hello Daily Bruin!
+      <ArticleGrid articles={data.news}></ArticleGrid>
+      <ArticleGrid articles={data.sports}></ArticleGrid>
+      <ArticleGrid articles={data.arts}></ArticleGrid>
+      <ArticleGrid articles={data.opinion}></ArticleGrid>
+      <ArticleGrid articles={data.multimedia}></ArticleGrid>
+      <ArticleGrid articles={data.prime}></ArticleGrid>
+      <ArticleGrid articles={data.thirty}></ArticleGrid>
       <Footer/>
     </div>
   );
