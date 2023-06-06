@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Landing from "./components/Landing";
+import background from './images/background.svg'
+import SectionHeader from "./components/SectionHeader";
 import ArticleGrid from './components/ArticleGrid';
 
 function App() {
@@ -14,9 +17,29 @@ function App() {
 		.then(res => setData(res.data['article.aml']))
   }, [])
 
+  const Container = styled.div`
+    background-image: url(${background});
+    background-size: cover;
+    height: fit-content;
+  `
+
   return data && (
     <div className="App">
       <Header/>
+      <Container>
+      <Landing image={data.landing_image} credits={data.landing_credits}/>   
+      <SectionHeader text="LETTER FROM THE EDITOR"></SectionHeader>
+      <SectionHeader text="INTERACTIVE"></SectionHeader>
+      <SectionHeader text=" NEWS"></SectionHeader>
+      <SectionHeader text="SPORTS"></SectionHeader>
+      <SectionHeader text="ARTS"></SectionHeader>
+      <SectionHeader text="OPINION"></SectionHeader>
+      <SectionHeader text="THE QUAD"></SectionHeader>
+      <SectionHeader text="MULTIMEDIA"></SectionHeader>
+      <SectionHeader text="PRIME"></SectionHeader>
+      <SectionHeader text="-30- COLUMNS"></SectionHeader>
+      <SectionHeader text="ABOUT"></SectionHeader>
+      </Container>
       Hello Daily Bruin!
       <ArticleGrid articles={data.news}></ArticleGrid>
       <ArticleGrid articles={data.sports}></ArticleGrid>
@@ -25,8 +48,6 @@ function App() {
       <ArticleGrid articles={data.multimedia}></ArticleGrid>
       <ArticleGrid articles={data.prime}></ArticleGrid>
       <ArticleGrid articles={data.thirty}></ArticleGrid>
-
-
       <Footer/>
     </div>
   );
