@@ -4,11 +4,12 @@ import { mediaQueries } from "../shared/config";
 
 const Container = styled.div`
   width: 100%;
-  height: 15em;
+  height: fit-content;
   background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 8em;
 `;
 
 const Text = styled.div`
@@ -16,10 +17,10 @@ const Text = styled.div`
   font-size: 50px;
   font-weight: 400;
   color:  #013B5A;
-  text-transform: uppercase
+  text-transform: uppercase;
 
   ${mediaQueries.mobile} {
-    font-size: 8px;
+    font-size: 20px;
   }
 `;
 

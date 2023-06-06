@@ -26,28 +26,37 @@ function App() {
   return data && (
     <div className="App">
       <Header/>
-      <Container>
-      <Landing image={data.landing_image} credits={data.landing_credits}/>   
-      <SectionHeader text="LETTER FROM THE EDITOR"></SectionHeader>
-      <SectionHeader text="INTERACTIVE"></SectionHeader>
-      <SectionHeader text=" NEWS"></SectionHeader>
-      <SectionHeader text="SPORTS"></SectionHeader>
-      <SectionHeader text="ARTS"></SectionHeader>
-      <SectionHeader text="OPINION"></SectionHeader>
-      <SectionHeader text="THE QUAD"></SectionHeader>
-      <SectionHeader text="MULTIMEDIA"></SectionHeader>
-      <SectionHeader text="PRIME"></SectionHeader>
-      <SectionHeader text="-30- COLUMNS"></SectionHeader>
-      <SectionHeader text="ABOUT"></SectionHeader>
-      </Container>
-      Hello Daily Bruin!
-      <ArticleGrid articles={data.news}></ArticleGrid>
-      <ArticleGrid articles={data.sports}></ArticleGrid>
-      <ArticleGrid articles={data.arts}></ArticleGrid>
-      <ArticleGrid articles={data.opinion}></ArticleGrid>
-      <ArticleGrid articles={data.multimedia}></ArticleGrid>
-      <ArticleGrid articles={data.prime}></ArticleGrid>
-      <ArticleGrid articles={data.thirty}></ArticleGrid>
+        <Container>
+          <Landing image={data.landing_image} credits={data.landing_credits}/>   
+          <SectionHeader text="LETTER FROM THE EDITORS"></SectionHeader>
+          <SectionHeader text="INTERACTIVE"></SectionHeader>
+
+          <SectionHeader text=" NEWS"></SectionHeader>
+          <ArticleGrid articles={data.news}></ArticleGrid>
+
+          <SectionHeader text="SPORTS"></SectionHeader>
+          <ArticleGrid articles={data.sports}></ArticleGrid>
+
+          <SectionHeader text="ARTS"></SectionHeader>
+          <ArticleGrid articles={data.arts}></ArticleGrid>
+
+          <SectionHeader text="OPINION"></SectionHeader>
+          <ArticleGrid articles={data.opinion}></ArticleGrid>
+
+          <SectionHeader text="THE QUAD"></SectionHeader>
+          <ArticleGrid articles={data.quad}></ArticleGrid>
+
+          <SectionHeader text="MULTIMEDIA"></SectionHeader>
+          <ArticleGrid articles={data.multimedia}></ArticleGrid>
+
+          <SectionHeader text="PRIME"></SectionHeader>
+          <ArticleGrid articles={data.prime}></ArticleGrid>
+
+          <SectionHeader text="-30- COLUMNS"></SectionHeader>
+          <ArticleGrid articles={data.thirty}></ArticleGrid>
+
+          <SectionHeader text="ABOUT"></SectionHeader>
+        </Container>
       <Footer/>
     </div>
   );

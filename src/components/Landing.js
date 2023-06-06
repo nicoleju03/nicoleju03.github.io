@@ -21,8 +21,8 @@ const Credits = styled.div`
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   color:  black;
-  bottom: -3em;
-  right: 1em;
+  bottom: -2em;
+  right: 0.5em;
 
   ${mediaQueries.mobile} {
     font-size: 8px;

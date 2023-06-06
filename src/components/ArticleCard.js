@@ -13,6 +13,7 @@ function getTextColor(color){
     else return "FFFFFF";
 
 }
+
 export default function ArticleGrid(props){
     const OuterContainer = styled.div`
         position: relative;
@@ -20,9 +21,14 @@ export default function ArticleGrid(props){
         height: 100%;
         margin: auto;
         background-color: #${getBackgroundColor(props.color)};
-        color: #${getTextColor(props.color)}
+        color: #${getTextColor(props.color)};
         padding: 1em;
-        border: .1em solid #013B5A;
+        border: 1px solid #013B5A;
+        box-sizing: border-box;
+
+        a {
+            text-decoration: none;
+        }
     `;
 
 
@@ -56,7 +62,6 @@ export default function ArticleGrid(props){
         font-size: 16px;
         font-weight: 400;
         text-align: center;
-        vertical-align: middle;
         padding: 1.5em;
         color: #${getTextColor(props.color)};
         border-top: .1em solid #013B5A;
@@ -69,16 +74,17 @@ export default function ArticleGrid(props){
 
     return(
         <div>
-        {props.article_title != 'blank' &&
-        <OuterContainer>
-            <a href={props.article_url}>
-                <Image src={props.article_image}></Image>
-            </a>
-            <ByLine> BY {props.article_byline} </ByLine>
-            <Title> {props.article_title} </Title>
-        
-        </OuterContainer>
-        }
+            {props.article_title != 'blank' &&
+                <OuterContainer>
+                    <a href={props.article_url}>
+                        <Image src={props.article_image}></Image>
+                    </a>
+                    <ByLine> BY {props.article_byline} </ByLine>
+                    <a href={props.article_url}>
+                        <Title> {props.article_title} </Title>
+                    </a>
+                </OuterContainer>
+            }
         </div>
         
 
