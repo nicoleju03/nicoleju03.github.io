@@ -24,7 +24,7 @@ const Container = styled.div`
 
 const Socials = styled.div`
     position: relative;
-	margin-top: 20px;
+	  margin-top: 20px;
   
 	img {
 
@@ -33,7 +33,10 @@ const Socials = styled.div`
 	}
 	p {
     position: relative;
-		margin: 80px 20px;
+		margin: 80px auto;
+    width: 60%;
+    text-align: center;
+
 		${mediaQueries.mobile} {
 			margin: 50px 20px;
 		}

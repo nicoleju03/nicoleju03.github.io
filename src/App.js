@@ -1,29 +1,33 @@
 import React, { useState, useEffect } from "react";
-import styled from 'styled-components';
-import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import styled from "styled-components";
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Landing from "./components/Landing";
-import background from './images/background.svg'
+import background from "./images/background.svg";
 import SectionHeader from "./components/SectionHeader";
-import ArticleGrid from './components/ArticleGrid';
 import { HashRouter } from 'react-router-dom';
 import NavHeader from "./components/NavHeader";
+import ArticleGrid from "./components/ArticleGrid";
+import EditorLetter from "./components/EditorLetter";
+import About from "./components/About";
 
 function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("https://kerckhoff.dailybruin.com/api/packages/flatpages/interactive.grad.issue.2023")
-      .then(res => res.json())
-      .then(res => setData(res.data['article.aml']))
-  }, [])
+    fetch(
+      "https://kerckhoff.dailybruin.com/api/packages/flatpages/interactive.grad.issue.2023"
+    )
+      .then((res) => res.json())
+      .then((res) => setData(res.data["article.aml"]));
+  }, []);
 
   const Container = styled.div`
     background-image: url(${background});
     background-size: cover;
     height: fit-content;
-  `
+  `;
 
   return data && (
     <div className="App">

@@ -17,12 +17,17 @@ const Illo = styled.img`
 `;
 
 const Credits = styled.div`
-  position: absolute;
+  /* position: absolute; */
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   color:  black;
-  bottom: -2em;
-  right: 0.5em;
+  /* bottom: -3em; */
+  /* right: 0.5em; */
+  width: 70%;
+  margin-top: 5px;
+  margin-right: 8px;
+  float: right;
+  text-align: right;
 
   ${mediaQueries.mobile} {
     font-size: 8px;

@@ -13,21 +13,21 @@ const Container = styled.div`
 `;
 
 const Text = styled.div`
-  font-family: 'Secular One';
-  font-size: 50px;
+  font-family: "Secular One";
+  font-size: 64px;
   font-weight: 400;
-  color:  #013B5A;
+  color: #013b5a;
   text-transform: uppercase;
 
   ${mediaQueries.mobile} {
-    font-size: 20px;
+    font-size: 36px;
   }
 `;
 
 export default function SectionHeader(props) {
-    return (
-      <Container>
-        <Text>{props.text}</Text>
-      </Container>
-    );
-  }
+  return (
+    <Container>
+      <Text>{props.text}</Text>
+    </Container>
+  );
+}
