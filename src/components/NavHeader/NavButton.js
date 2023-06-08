@@ -59,7 +59,7 @@ const NavButton = (props) => {
         const target = document.getElementById(props.section)
         if (target) {
           const rem = parseFloat(getComputedStyle(document.documentElement).fontSize)
-          const remDisplacement = isMobile ? 2 * rem : 7 * rem; 
+          const remDisplacement = isMobile ? 20 * rem : 7 * rem; 
           const top = target.getBoundingClientRect().top + window.pageYOffset - remDisplacement;
           window.scrollTo({ top, behavior: "smooth" })
         }
