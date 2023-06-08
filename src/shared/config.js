@@ -1,4 +1,8 @@
 export const colors = {
+  navBtnBackground: "#FFD100",
+  navActiveBtnBackground: "#2774AF",
+  navButtonText: "#013B5A",
+  navButtonHover: '#f9efb9',
 };
   
 export const fonts = {
