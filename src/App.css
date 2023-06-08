@@ -3,7 +3,7 @@
   cursor: url(images/black-magnifying-glass.svg) 30 30, auto;
 }
 
-a {
+a, button {
   cursor: url(images/red-magnifying-glass.svg) 30 30, auto;
 }
 
