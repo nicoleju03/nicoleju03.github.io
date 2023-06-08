@@ -36,6 +36,7 @@ const StyledButton = styled.button`
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
+  white-space: nowrap;
 
   line-height: 29px;
 `
