@@ -38,6 +38,7 @@ function App() {
           <Landing image={data.landing_image} credits={data.landing_credits} />
           <div id="LETTER">
             <SectionHeader text="LETTER FROM THE EDITORS"></SectionHeader>
+            <EditorLetter editor_letter={data.editor_letter}></EditorLetter>
           </div>
           <div id="INTERACTIVE">
             <SectionHeader text="INTERACTIVE"></SectionHeader>
@@ -76,9 +77,10 @@ function App() {
           </div>
           <div id="ABOUT">
             <SectionHeader text="ABOUT"></SectionHeader>
+            <About about={data.about}></About>
           </div>
+          <Footer />
         </Container>
-        <Footer />
       </HashRouter>
     </div>
   );
