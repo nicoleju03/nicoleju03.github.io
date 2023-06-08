@@ -28,10 +28,9 @@ const NavbarContainer = styled.div`
   z-index: 2000;
 
   position: fixed;
-  height: 230px;
+  height: 275px;
   width 100%;
   left: 0px;
-  top: 38px;
   background: linear-gradient(180deg, #F2D851 0%, #F6CC74 100%);
   border-bottom: 2px solid black;
 
