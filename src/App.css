@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  cursor: url(images/black-magnifying-glass.svg) 30 30, auto;
+}
+
+a {
+  cursor: url(images/red-magnifying-glass.svg) 30 30, auto;
 }
 
 .App-logo {
