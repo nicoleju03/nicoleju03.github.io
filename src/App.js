@@ -7,14 +7,16 @@ import Landing from "./components/Landing";
 import background from './images/background.svg'
 import SectionHeader from "./components/SectionHeader";
 import ArticleGrid from './components/ArticleGrid';
+import { HashRouter } from 'react-router-dom';
+import NavHeader from "./components/NavHeader";
 
 function App() {
-  const [ data, setData ] = useState(null);
-  
+  const [data, setData] = useState(null);
+
   useEffect(() => {
-		fetch("https://kerckhoff.dailybruin.com/api/packages/flatpages/interactive.grad.issue.2023")
-		.then(res => res.json())
-		.then(res => setData(res.data['article.aml']))
+    fetch("https://kerckhoff.dailybruin.com/api/packages/flatpages/interactive.grad.issue.2023")
+      .then(res => res.json())
+      .then(res => setData(res.data['article.aml']))
   }, [])
 
   const Container = styled.div`
@@ -25,39 +27,55 @@ function App() {
 
   return data && (
     <div className="App">
-      <Header/>
+      <HashRouter>
+        <Header/>
         <Container>
-          <Landing image={data.landing_image} credits={data.landing_credits}/>   
-          <SectionHeader text="LETTER FROM THE EDITORS"></SectionHeader>
-          <SectionHeader text="INTERACTIVE"></SectionHeader>
-
-          <SectionHeader text=" NEWS"></SectionHeader>
-          <ArticleGrid articles={data.news}></ArticleGrid>
-
-          <SectionHeader text="SPORTS"></SectionHeader>
-          <ArticleGrid articles={data.sports}></ArticleGrid>
-
-          <SectionHeader text="ARTS"></SectionHeader>
-          <ArticleGrid articles={data.arts}></ArticleGrid>
-
-          <SectionHeader text="OPINION"></SectionHeader>
-          <ArticleGrid articles={data.opinion}></ArticleGrid>
-
-          <SectionHeader text="THE QUAD"></SectionHeader>
-          <ArticleGrid articles={data.quad}></ArticleGrid>
-
-          <SectionHeader text="MULTIMEDIA"></SectionHeader>
+          <NavHeader />
+          <Landing image={data.landing_image} credits={data.landing_credits} />
+          <div id="LETTER">
+            <SectionHeader text="LETTER FROM THE EDITORS"></SectionHeader>
+          </div>
+          <div id="INTERACTIVE">
+            <SectionHeader text="INTERACTIVE"></SectionHeader>
+          </div>
+          <div id="NEWS">
+            <SectionHeader text="NEWS"></SectionHeader>
+            <ArticleGrid articles={data.news}></ArticleGrid>
+          </div>
+          <div id="SPORTS">
+            <SectionHeader text="SPORTS"></SectionHeader>
+            <ArticleGrid articles={data.sports}></ArticleGrid>
+          </div>
+          <div id="ARTS">
+            <SectionHeader text="ARTS"></SectionHeader>
+            <ArticleGrid articles={data.arts}></ArticleGrid>
+          </div>
+          <div id="OPINION">
+            <SectionHeader text="OPINION"></SectionHeader>
+            <ArticleGrid articles={data.opinion}></ArticleGrid>
+          </div>
+          <div id="THE QUAD">
+            <SectionHeader text="THE QUAD"></SectionHeader>
+            <ArticleGrid articles={data.quad}></ArticleGrid>
+          </div>
+          <div id="MULTIMEDIA">
+            <SectionHeader text="MULTIMEDIA"></SectionHeader>
           <ArticleGrid articles={data.multimedia}></ArticleGrid>
-
-          <SectionHeader text="PRIME"></SectionHeader>
-          <ArticleGrid articles={data.prime}></ArticleGrid>
-
-          <SectionHeader text="-30- COLUMNS"></SectionHeader>
-          <ArticleGrid articles={data.thirty}></ArticleGrid>
-
-          <SectionHeader text="ABOUT"></SectionHeader>
+          </div>
+          <div id="PRIME">
+            <SectionHeader text="PRIME"></SectionHeader>
+            <ArticleGrid articles={data.prime}></ArticleGrid>
+          </div>          
+          <div id="-30-">
+            <SectionHeader text="-30- COLUMNS"></SectionHeader>
+            <ArticleGrid articles={data.thirty}></ArticleGrid>
+          </div>
+          <div id="ABOUT">
+            <SectionHeader text="ABOUT"></SectionHeader>
+          </div>
         </Container>
-      <Footer/>
+        <Footer />
+      </HashRouter>
     </div>
   );
 }
