@@ -1,41 +1,34 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
-import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import styled from 'styled-components';
+import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import Landing from "./components/Landing";
-import background from "./images/background.svg";
+import background from './images/background.svg'
 import SectionHeader from "./components/SectionHeader";
-import ArticleGrid from "./components/ArticleGrid";
-import EditorLetter from "./components/EditorLetter";
-import About from "./components/About";
+import ArticleGrid from './components/ArticleGrid';
 
 function App() {
-  const [data, setData] = useState(null);
-
+  const [ data, setData ] = useState(null);
+  
   useEffect(() => {
-    fetch(
-      "https://kerckhoff.dailybruin.com/api/packages/flatpages/interactive.grad.issue.2023"
-    )
-      .then((res) => res.json())
-      .then((res) => setData(res.data["article.aml"]));
-  }, []);
+		fetch("https://kerckhoff.dailybruin.com/api/packages/flatpages/interactive.grad.issue.2023")
+		.then(res => res.json())
+		.then(res => setData(res.data['article.aml']))
+  }, [])
 
   const Container = styled.div`
     background-image: url(${background});
     background-size: cover;
     height: fit-content;
-  `;
+  `
 
-  return (
-    data && (
-      <div className="App">
-        <Header />
+  return data && (
+    <div className="App">
+      <Header/>
         <Container>
-          <Landing image={data.landing_image} credits={data.landing_credits} />
+          <Landing image={data.landing_image} credits={data.landing_credits}/>   
           <SectionHeader text="LETTER FROM THE EDITORS"></SectionHeader>
-          <EditorLetter editor_letter={data.editor_letter}></EditorLetter>
-
           <SectionHeader text="INTERACTIVE"></SectionHeader>
 
           <SectionHeader text=" NEWS"></SectionHeader>
@@ -63,11 +56,9 @@ function App() {
           <ArticleGrid articles={data.thirty}></ArticleGrid>
 
           <SectionHeader text="ABOUT"></SectionHeader>
-          <About about={data.about}></About>
         </Container>
-        <Footer />
-      </div>
-    )
+      <Footer/>
+    </div>
   );
 }
 
