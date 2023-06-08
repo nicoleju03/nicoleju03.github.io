@@ -4,13 +4,14 @@ import { mediaQueries } from "../shared/config";
 
 const Container = styled.div`
   position: relative;
-  margin: 80px auto 10% auto;
-  width: 50%;
+  margin: 2em auto 10% auto;
+  width: 60%;
   height: fit-content;
   block-size: fit-content;
   border: 1px solid #013b5a;
   background: #2774af;
   font-family: "Roboto Mono", sans-serif;
+  box-sizing: border-box;
 
   ${mediaQueries.mobile} {
     width: 80%;

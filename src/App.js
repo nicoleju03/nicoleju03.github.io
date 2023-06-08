@@ -64,8 +64,9 @@ function App() {
 
           <SectionHeader text="ABOUT"></SectionHeader>
           <About about={data.about}></About>
+          <Footer />
         </Container>
-        <Footer />
+        
       </div>
     )
   );
