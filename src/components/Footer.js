@@ -9,9 +9,9 @@ import { mediaQueries } from '../shared/config';
 
 
 const Container = styled.div`
-	background-color: black;
+	background-color: transparent;
 	height: auto;
-	color: white;
+	color: #013B5A;
 	padding: 60px 0 10px 0;
     text-align: center;
 	h1 {
@@ -24,7 +24,7 @@ const Container = styled.div`
 
 const Socials = styled.div`
     position: relative;
-	margin-top: 20px;
+	  margin-top: 20px;
   
 	img {
 
@@ -33,7 +33,10 @@ const Socials = styled.div`
 	}
 	p {
     position: relative;
-		margin: 80px 20px;
+		margin: 80px auto;
+    width: 60%;
+    text-align: center;
+
 		${mediaQueries.mobile} {
 			margin: 50px 20px;
 		}
@@ -50,7 +53,7 @@ const Footer = () => {
           <a href="https://www.twitter.com/dailybruin" target="_blank"><img src={twitter}/></a>
           <a href="https://www.tiktok.com/@dailybruin" target="_blank"><img src={tiktok}/></a>
           <a href="http://eepurl.com/cFEiZX" target="_blank"><img src={email}/></a>
-          <p>Built with Suzy’s ♥ in Kerckhoff 118 by [developers]. Designed by [designers].</p>
+          <p>Built with Suzy’s ♥ in Kerckhoff 118 by Nicole Ju, Elaine Lin, Bryson Xiao, Matthew Yu, Tracy Zhao. Designed by Lindsey Murto, Helen Quach, Isabel Rubin-Saika, Tang, and Mia Tavares.</p>
         </Socials>
     </Container>
     )
