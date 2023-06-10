@@ -77,8 +77,8 @@ function MyMap() {
             )
         },
         {
-            positionX: 0.45,
-            positionY: 0.83,
+            positionX: 0.31,
+            positionY: 0.7,
             icon: flag_pin,
             popupMessage: (
                 <div>
@@ -143,8 +143,8 @@ function MyMap() {
             )
         },
         {
-            positionX: 0.31,
-            positionY: 0.7,
+            positionX: 0.45,
+            positionY: 0.83,
             icon: magazine,
             popupMessage: (
                 <div>
@@ -404,7 +404,8 @@ function MyMap() {
                 style={{ height: '100%', width: '100%' }}
                 container="map-container"
                 scrollWheelZoom={false}
-            // zoomControl={true}
+                zoomControl={true}
+                dragging={false}
             >
                 <ImageOverlay url={background} bounds={backgroundBounds} />
                 <ImageOverlay url={magnifyingGlass} bounds={bounds} />
