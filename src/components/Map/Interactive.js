@@ -398,14 +398,14 @@ function MyMap() {
 
     return (
         <div id="map-container" style={{ height: '600px', width: '100%' }}>
-            <MapContainer
+            <MapContainer className="white-background"
                 crs={CRS.Simple}
                 bounds={bounds}
                 style={{ height: '100%', width: '100%' }}
                 container="map-container"
                 scrollWheelZoom={false}
                 zoomControl={true}
-                dragging={false}
+                dragging={true}
             >
                 <ImageOverlay url={background} bounds={backgroundBounds} />
                 <ImageOverlay url={magnifyingGlass} bounds={bounds} />
