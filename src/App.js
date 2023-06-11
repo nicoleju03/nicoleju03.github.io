@@ -11,6 +11,8 @@ import NavHeader from "./components/NavHeader";
 import ArticleGrid from "./components/ArticleGrid";
 import EditorLetter from "./components/EditorLetter";
 import About from "./components/About";
+import mobileBackgroud from "./images/mobilebackground.svg";
+import { mediaQueries } from "./shared/config";
 
 function App() {
   const [data, setData] = useState(null);
@@ -27,6 +29,11 @@ function App() {
     background-image: url(${background});
     background-size: cover;
     height: fit-content;
+
+    ${mediaQueries.mobile} {
+      background-image: url(${mobileBackgroud});
+    }
+
   `;
 
   return data && (
