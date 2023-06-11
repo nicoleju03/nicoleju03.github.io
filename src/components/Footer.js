@@ -53,7 +53,7 @@ const Footer = () => {
           <a href="https://www.twitter.com/dailybruin" target="_blank"><img src={twitter}/></a>
           <a href="https://www.tiktok.com/@dailybruin" target="_blank"><img src={tiktok}/></a>
           <a href="http://eepurl.com/cFEiZX" target="_blank"><img src={email}/></a>
-          <p>Built with Suzy’s ♥ in Kerckhoff 118 by Nicole Ju, Elaine Lin, Bryson Xiao, Matthew Yu, Tracy Zhao. Designed by Lindsey Murto, Helen Quach, Isabel Rubin-Saika, Tang, and Mia Tavares.</p>
+          <p>Built with Suzy’s ♥ in Kerckhoff 118 by Nicole Ju, Elaine Lin, Bryson Xiao, Matthew Yu and Tracy Zhao. Designed by Lindsey Murto, Helen Quach, Isabel Rubin-Saika, Emily Tang and Mia Tavares.</p>
         </Socials>
     </Container>
     )
