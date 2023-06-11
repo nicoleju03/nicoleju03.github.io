@@ -26,7 +26,7 @@ const NavbarContainer = styled.div`
 
 const sections = [
   'LETTER',
-  'INTERACTIVE',
+  'A CLOSER LOOK',
   'NEWS',
   'SPORTS',
   'ARTS',

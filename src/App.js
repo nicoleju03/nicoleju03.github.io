@@ -48,7 +48,7 @@ function App() {
             <SectionHeader text="LETTER FROM THE EDITORS"></SectionHeader>
             <EditorLetter editor_letter={data.editor_letter}></EditorLetter>
           </div>
-          <div id="INTERACTIVE">
+          <div id="A CLOSER LOOK">
             <SectionHeader text="A CLOSER LOOK"></SectionHeader>
             <MyMap />
           </div>
