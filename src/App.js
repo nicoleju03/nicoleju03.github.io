@@ -49,7 +49,7 @@ function App() {
             <EditorLetter editor_letter={data.editor_letter}></EditorLetter>
           </div>
           <div id="INTERACTIVE">
-            <SectionHeader text="INTERACTIVE"></SectionHeader>
+            <SectionHeader text="A CLOSER LOOK"></SectionHeader>
             <MyMap />
           </div>
           <div id="NEWS">
