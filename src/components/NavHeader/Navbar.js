@@ -8,14 +8,12 @@ import { mediaQueries } from '../../shared/config';
 /* This should always be on top (z-index) */
 const NavbarContainer = styled.div`
   z-index: 2000;
+  margin: auto;
 
   ${mediaQueries.notTablet} {
-    display: flex;
-    flex-direction: row;
     position: fixed;
     top: 58px;
-    left: 10.8%;
-    width: 79%;
+    width: 100%;
   }
   ${mediaQueries.tablet} {
     margin-top: 20px;
