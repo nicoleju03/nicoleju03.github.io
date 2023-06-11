@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Landing from "./components/Landing";
 import background from "./images/background.svg";
+import MyMap from './components/Map/Interactive';
 import SectionHeader from "./components/SectionHeader";
 import { HashRouter } from 'react-router-dom';
 import NavHeader from "./components/NavHeader";
@@ -49,6 +50,7 @@ function App() {
           </div>
           <div id="INTERACTIVE">
             <SectionHeader text="INTERACTIVE"></SectionHeader>
+            <MyMap />
           </div>
           <div id="NEWS">
             <SectionHeader text="NEWS"></SectionHeader>
