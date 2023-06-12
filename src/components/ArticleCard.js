@@ -36,7 +36,7 @@ export default function ArticleGrid(props){
         height: 60%;
         width: 100%;
         display: block;
-        object-fit: cover;
+        object-fit: contain;
         border-bottom: .1em solid #013B5A;
     `;
 
