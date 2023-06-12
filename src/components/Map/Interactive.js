@@ -149,7 +149,7 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>PRIME Winter Issue: Hidden Gems</h3>
-                    <p>In their winter issue, PRIME uncovered some of UCLA's hidden gems.</p>
+                    <p>PRIME’s winter issue explores the untold stories of campus.</p>
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <p style={{ fontSize: 'smaller' }}>Check out <a href="https://prime.dailybruin.com/winter23" target="_blank">PRIME's full Winter issue</a>.</p>
