@@ -393,11 +393,11 @@ function MyMap() {
 
     const backgroundBounds = new LatLngBounds(
         [35.04, -220.63], // Southwestern coordinate (adjusted longitude)
-        [35.21, -220.24] // Northeastern coordinate (adjusted longitude)
+        [35.30, -220.24] // Northeastern coordinate (adjusted longitude)
     );
 
     return (
-        <div id="map-container" style={{ height: '600px', width: '100%' }}>
+        <div id="map-container" style={{ height: '1000px', width: '100%' }}>
             <div className="description">Click on the icons in the magnifying glass for a closer look at notable events from this year.</div>
             <MapContainer className="custom-map"
                 crs={CRS.Simple}
