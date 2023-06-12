@@ -17,7 +17,7 @@ const Illo = styled.img`
   object-fit: contain;
 `;
 
-const Credits = styled.div`
+export const Credits = styled.div`
   /* position: absolute; */
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;

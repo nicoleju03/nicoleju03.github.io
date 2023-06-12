@@ -7,6 +7,7 @@ import { basketball, bruincard, camera, flag_pin, football, gavel, house, magazi
 // import { backpack, blue_coffee_cup, db_logo, db_newspaper, dice, epic, epic_bag_2, eraser, globe, grad_cap, group_15, headphones, jersey, joe, josie, lanyard, laptop, meal_coupon, ncaa_trophy, notebook, ollie_icon, pamphlet, pen_black, pen_blue, plant_1, plant_2, plant_3, plant_4, plant_5, powell_cat_2, powell_library, sandwich, sandwich1, scooter, soccer_ball_2, squirrel } from './Icons.js';
 import magnifyingGlass from './Images/magnifying-glass.png';
 import background from './Images/background.png';
+import { Credits } from '../Landing';
 
 function MyMap() {
     const bounds = new LatLngBounds(
@@ -413,6 +414,7 @@ function MyMap() {
                 <ImageOverlay url={magnifyingGlass} bounds={bounds} />
                 {markers}
             </MapContainer>
+            <Credits> (Interactive By Junwon Choi/Liam McGlynn/Daily Bruin) </Credits>
         </div>
     );
 }
