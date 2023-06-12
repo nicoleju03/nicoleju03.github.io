@@ -83,9 +83,13 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>The President and Vice President visit Westwood and UCLA</h3>
+<<<<<<< Updated upstream
                     <p>During this academic year, President Joe Biden and Vice President Kamala Harris visited and spoke 
                         in Westwood and at UCLA respectively. Biden discussed infrastructure  improvements in Westwood and his 
                         support for union and middle-class workers, while Harris encouraged young voters to participate in the election.</p>
+=======
+                    <p>During this academic year, President Joe Biden and Vice President Kamala Harris visited and spoke in Westwood and at UCLA respectively. Biden discussed infrastructure  improvements in Westwood and his support for union and middle-class workers, while Harris encouraged young voters to participate in the election.</p>
+>>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <div class="image-container">
@@ -111,10 +115,14 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>UCLA men's football</h3>
+<<<<<<< Updated upstream
                     <p>This year, UCLA's annual crosstown rivalry game with USC kept fans absorbed until the very 
                         end with a tight battle that resulted in a comeback victory for the Trojans. This, however, 
                         will not be their final matchup as both programs will join the Big Ten in the 2024 season.
                     </p>
+=======
+                    <p>This year, UCLA's annual crosstown rivalry game with USC kept fans absorbed until the very end with a tight battle that resulted in a comeback victory for the Trojans. This, however, will not be their final matchup as both programs will join the Big Ten in the 2024 season.</p>
+>>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <div class="image-container">
@@ -140,9 +148,13 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>Unsafe conditions in UCLA apartments</h3>
+<<<<<<< Updated upstream
                     <p>We investigated the concerning conditions of UCLA-owned apartments in Westwood. 
                         Many UCLA students living off campus in university-owned housing delt with unsafe living 
                         conditions under UCLA Housing management.</p>
+=======
+                    <p>We investigated the concerning conditions of UCLA-owned apartments in Westwood. Many UCLA students living off campus in university-owned housing delt with unsafe living conditions under UCLA Housing management.</p>
+>>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <p style={{ fontSize: 'smaller' }}>Dig deeper into the <a href="https://dailybruin.com/2022/12/19/straight-up-dangerous-students-in-westwood-chateau-allege-unsafe-conditions" target="_blank">investigation</a>.</p>
@@ -191,11 +203,15 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>UC Budget Changes</h3>
+<<<<<<< Updated upstream
                     <p>Gov. Gavin Newsom's proposed budget for the 2023-2024 fiscal year in January revealed a 
                         decrease in university funding. It also included a new policy requiring UCLA's inclusion 
                         in the Transfer Admission Guarantee program as a condition for receiving state funding, 
                         potentially leading to a major change in UCLA's transfer admissions process.
                     </p>
+=======
+                    <p>Gov. Gavin Newsom's proposed budget for the 2023-2024 fiscal year in January revealed a decrease in university funding. It also included a new policy requiring UCLA's inclusion in the Transfer Admission Guarantee program as a condition for receiving state funding, potentially leading to a major change in UCLA's transfer admissions process.</p>
+>>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <p style={{ fontSize: 'smaller' }}>Read more about the <a href="https://dailybruin.com/2023/02/05/gov-gavin-newsoms-proposed-budget-may-impact-uc-education-quality" target="_blank">potential impacts on UC education</a>.</p>
@@ -209,9 +225,13 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>Fires at Roebling block party</h3>
+<<<<<<< Updated upstream
                     <p>Two fires were put out on Roebling Avenue on September 29, 2022 after several individuals lit various objects on fire 
                         during the Roebling block party. LAFD and UCPD promptly responded to this incident.
                     </p>
+=======
+                    <p>Two fires were put out on Roebling Avenue on September 29, 2022 after several individuals lit various objects on fire during the Roebling block party. LAFD and UCPD promptly responded to this incident.</p>
+>>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <div class="image-container">
@@ -231,10 +251,14 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>Powell Cat</h3>
+<<<<<<< Updated upstream
                     <p>UCLA's unofficial mascot Powell Cat died March 9. Powell Cat left nearly a decadelong campus legacy 
                         since their first appearance in 2015. Many UCLA students gathered for a memorial for them in front of 
                         Powell Library and on online platforms.
                     </p>
+=======
+                    <p>UCLA's unofficial mascot Powell Cat died March 9. Powell Cat left nearly a decadelong campus legacy since their first appearance in 2015. Many UCLA students gathered for a memorial for them in front of Powell Library and on online platforms.</p>
+>>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <div class="image-container">
@@ -254,7 +278,7 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>ChatGPT</h3>
-                    <p>ChatGPT has transformed many aspects of Student life and academic practices since its November release.</p>
+                    <p>ChatGPT has transformed many aspects of student life and academic practices since its November release.</p>
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <div class="image-container">
@@ -263,7 +287,7 @@ function MyMap() {
                     </div>
                     <br></br>
                     <br></br>
-                    <p style={{ fontSize: 'smaller' }}>Read more about <a href="https://dailybruin.com/2022/10/02/students-struggle-with-poor-wi-fi-connectivity-on-campus" target="_blank">UCLA's Wi-Fi connectivity issues</a>.</p>
+                    <p style={{ fontSize: 'smaller' }}>Read our <a href="https://dailybruin.com/2023/02/22/campus-queries-what-do-chatgpt-and-the-rise-of-ai-mean-for-the-future" target="_blank">news</a>, <a href="https://dailybruin.com/2023/05/04/the-future-incorporation-of-ai-in-classrooms-will-facilitate-innovation" target="_blank">opinion</a> and <a href="https://dailybruin.com/2023/04/17/editorial-cartoon-prompt-engineer" target="_blank">cartoon</a> coverage about ChatGPT.</p>
                 </div>
             )
         },
@@ -274,7 +298,7 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>New Campus Acquisitions</h3>
-                    <p>With growing enrollment population, UCLA announced the acquisition of two new campuses in Palos Verdes and San Pedro, enabling the university to further pursue its goal to increase enrollment by 2030.</p>
+                    <p>With a growing enrollment population, UCLA announced the acquisition of two new campuses in Palos Verdes and San Pedro, enabling the university to further pursue its goal to increase enrollment by 2030.</p>
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <p style={{ fontSize: 'smaller' }}>Read more about the <a href="https://dailybruin.com/2022/09/27/ucla-to-acquire-new-sites-in-rancho-palos-verdes-san-pedro" target="_blank">acquisitions</a>.</p>
@@ -322,7 +346,7 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>UC academic worker strikes 2022</h3>
-                    <p>Across November and December of 2022, thousands of UC academic workers went on strike, protesting for better wages and improved working conditions. The historic UC-wide strike ended with ratified UAW contracts for graduate student workers.</p>
+                    <p>Across November and December 2022, thousands of UC academic workers went on strike, protesting for better wages and improved working conditions. The historic UC-wide strike ended with ratified UAW contracts for graduate student workers.</p>
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <div class="image-container">
@@ -342,7 +366,11 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>Men's volleyball wins national championship</h3>
+<<<<<<< Updated upstream
                     <p>After a closely contested battle in the first two sets, UCLA men's volleyball emerged victorious over Hawai'i to claim their 20th national championship.</p>
+=======
+                    <p>After a closely contested battle in the first two sets, UCLA men's volleyball emerged victorious over Hawaii to claim its 20th national championship.</p>
+>>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <div class="image-container">
