@@ -18,7 +18,7 @@ export default function ArticleGrid(props){
     const OuterContainer = styled.div`
         position: relative;
         width: 100%;
-        height: 100%;
+        height: fit-content;
         margin: auto;
         background-color: #${getBackgroundColor(props.color)};
         color: #${getTextColor(props.color)};
