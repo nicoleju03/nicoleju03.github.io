@@ -19,6 +19,7 @@ export default function ArticleGrid(props){
         position: relative;
         width: 100%;
         height: fit-content;
+        min-height: 90%;
         margin: auto;
         background-color: #${getBackgroundColor(props.color)};
         color: #${getTextColor(props.color)};
@@ -36,7 +37,7 @@ export default function ArticleGrid(props){
         height: 60%;
         width: 100%;
         display: block;
-        object-fit: contain;
+        object-fit: scale-down;
         border-bottom: .1em solid #013B5A;
     `;
 
@@ -62,7 +63,7 @@ export default function ArticleGrid(props){
         font-size: 16px;
         font-weight: 400;
         text-align: center;
-        padding: 1.5em;
+        padding: 1em;
         color: #${getTextColor(props.color)};
         border-top: .1em solid #013B5A;
         font-family: 'Roboto Mono';

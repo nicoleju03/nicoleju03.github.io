@@ -11,10 +11,11 @@ const OuterContainer = styled.div`
 
 const Grid = styled.div`
     max-width: 80%;
+    height: fit-content;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 30em;    
+    /* grid-auto-rows: 30em;     */
     row-gap: 6em;
     column-gap: 5em;
 
