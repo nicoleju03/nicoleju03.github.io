@@ -414,7 +414,7 @@ function MyMap() {
                 <ImageOverlay url={magnifyingGlass} bounds={bounds} />
                 {markers}
             </MapContainer>
-            <Credits> (Interactive By Junwon Choi/Liam McGlynn/Daily Bruin) </Credits>
+            <Credits> (Interactive by Junwon Choi/Data editor and Liam McGlynn/Assistant Data editor) </Credits>
         </div>
     );
 }
