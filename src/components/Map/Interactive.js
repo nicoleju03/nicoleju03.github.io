@@ -83,13 +83,7 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>The President and Vice President visit Westwood and UCLA</h3>
-<<<<<<< Updated upstream
-                    <p>During this academic year, President Joe Biden and Vice President Kamala Harris visited and spoke 
-                        in Westwood and at UCLA respectively. Biden discussed infrastructure  improvements in Westwood and his 
-                        support for union and middle-class workers, while Harris encouraged young voters to participate in the election.</p>
-=======
                     <p>During this academic year, President Joe Biden and Vice President Kamala Harris visited and spoke in Westwood and at UCLA respectively. Biden discussed infrastructure  improvements in Westwood and his support for union and middle-class workers, while Harris encouraged young voters to participate in the election.</p>
->>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <div class="image-container">
@@ -115,14 +109,7 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>UCLA men's football</h3>
-<<<<<<< Updated upstream
-                    <p>This year, UCLA's annual crosstown rivalry game with USC kept fans absorbed until the very 
-                        end with a tight battle that resulted in a comeback victory for the Trojans. This, however, 
-                        will not be their final matchup as both programs will join the Big Ten in the 2024 season.
-                    </p>
-=======
                     <p>This year, UCLA's annual crosstown rivalry game with USC kept fans absorbed until the very end with a tight battle that resulted in a comeback victory for the Trojans. This, however, will not be their final matchup as both programs will join the Big Ten in the 2024 season.</p>
->>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <div class="image-container">
@@ -148,13 +135,7 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>Unsafe conditions in UCLA apartments</h3>
-<<<<<<< Updated upstream
-                    <p>We investigated the concerning conditions of UCLA-owned apartments in Westwood. 
-                        Many UCLA students living off campus in university-owned housing delt with unsafe living 
-                        conditions under UCLA Housing management.</p>
-=======
                     <p>We investigated the concerning conditions of UCLA-owned apartments in Westwood. Many UCLA students living off campus in university-owned housing delt with unsafe living conditions under UCLA Housing management.</p>
->>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <p style={{ fontSize: 'smaller' }}>Dig deeper into the <a href="https://dailybruin.com/2022/12/19/straight-up-dangerous-students-in-westwood-chateau-allege-unsafe-conditions" target="_blank">investigation</a>.</p>
@@ -203,15 +184,7 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>UC Budget Changes</h3>
-<<<<<<< Updated upstream
-                    <p>Gov. Gavin Newsom's proposed budget for the 2023-2024 fiscal year in January revealed a 
-                        decrease in university funding. It also included a new policy requiring UCLA's inclusion 
-                        in the Transfer Admission Guarantee program as a condition for receiving state funding, 
-                        potentially leading to a major change in UCLA's transfer admissions process.
-                    </p>
-=======
                     <p>Gov. Gavin Newsom's proposed budget for the 2023-2024 fiscal year in January revealed a decrease in university funding. It also included a new policy requiring UCLA's inclusion in the Transfer Admission Guarantee program as a condition for receiving state funding, potentially leading to a major change in UCLA's transfer admissions process.</p>
->>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <p style={{ fontSize: 'smaller' }}>Read more about the <a href="https://dailybruin.com/2023/02/05/gov-gavin-newsoms-proposed-budget-may-impact-uc-education-quality" target="_blank">potential impacts on UC education</a>.</p>
@@ -225,13 +198,7 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>Fires at Roebling block party</h3>
-<<<<<<< Updated upstream
-                    <p>Two fires were put out on Roebling Avenue on September 29, 2022 after several individuals lit various objects on fire 
-                        during the Roebling block party. LAFD and UCPD promptly responded to this incident.
-                    </p>
-=======
                     <p>Two fires were put out on Roebling Avenue on September 29, 2022 after several individuals lit various objects on fire during the Roebling block party. LAFD and UCPD promptly responded to this incident.</p>
->>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <div class="image-container">
@@ -251,14 +218,7 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>Powell Cat</h3>
-<<<<<<< Updated upstream
-                    <p>UCLA's unofficial mascot Powell Cat died March 9. Powell Cat left nearly a decadelong campus legacy 
-                        since their first appearance in 2015. Many UCLA students gathered for a memorial for them in front of 
-                        Powell Library and on online platforms.
-                    </p>
-=======
                     <p>UCLA's unofficial mascot Powell Cat died March 9. Powell Cat left nearly a decadelong campus legacy since their first appearance in 2015. Many UCLA students gathered for a memorial for them in front of Powell Library and on online platforms.</p>
->>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <div class="image-container">
@@ -366,11 +326,7 @@ function MyMap() {
             popupMessage: (
                 <div>
                     <h3>Men's volleyball wins national championship</h3>
-<<<<<<< Updated upstream
-                    <p>After a closely contested battle in the first two sets, UCLA men's volleyball emerged victorious over Hawai'i to claim their 20th national championship.</p>
-=======
                     <p>After a closely contested battle in the first two sets, UCLA men's volleyball emerged victorious over Hawaii to claim its 20th national championship.</p>
->>>>>>> Stashed changes
                     {/* Insert image from pop-up images folder */}
                     <br></br>
                     <div class="image-container">
