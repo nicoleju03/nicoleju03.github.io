@@ -30,7 +30,7 @@ const NavbarContainer = styled.div`
   position: fixed;
   width 100%;
   left: 0px;
-  background: linear-gradient(180deg, #F2D851 0%, #F6CC74 100%);
+  background: linear-gradient(180deg, #D1E2C4 0%, #D1E2C4 100%);
   border-bottom: 2px solid black;
 
   display: block;

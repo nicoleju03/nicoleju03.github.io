@@ -2,13 +2,6 @@
   text-align: center;
 }
 
-*:not(img){
-  cursor: url(images/black-magnifying-glass.svg) 10 10, auto !important;
-}
-
-a, button, .leaflet-marker-icon {
-  cursor: url(images/red-magnifying-glass.svg) 10 10, pointer !important;
-}
 
 .App-logo {
   height: 40vmin;

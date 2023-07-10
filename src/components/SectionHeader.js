@@ -13,11 +13,9 @@ const Container = styled.div`
 `;
 
 const Text = styled.div`
-  font-family: "Secular One";
-  font-size: 64px;
-  font-weight: 400;
+  font-family: Bacasime Antique;
+  font-size: 55px;
   color: #013b5a;
-  text-transform: uppercase;
 
   ${mediaQueries.mobile} {
     font-size: 36px;

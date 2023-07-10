@@ -7,7 +7,7 @@ import { mediaQueries, colors } from "../../shared/config";
 const StyledButton = styled.button`
   min-height: 40px;
   max-height: 80px;
-  border: 1px solid black;
+  border: 1px dotted gray;
 
   background: ${props => props.highlight ? colors.navActiveBtnBackground : colors.navBtnBackground};
   ${mediaQueries.notTablet} {
@@ -15,6 +15,7 @@ const StyledButton = styled.button`
     transition: 0.3s;
     &:hover {
       background: ${colors.navButtonHover};
+      color: ${colors.navButtonHoverText};
     }
   }
   ${mediaQueries.tablet} {
@@ -29,7 +30,7 @@ const StyledButton = styled.button`
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  color: ${props => props.highlight ? 'white' : '#013B5A'};
+  color: ${props => props.highlight ? 'white' : 'gray'};
 
   /* identical to box height */
   align-items: center;
@@ -39,6 +40,7 @@ const StyledButton = styled.button`
   white-space: nowrap;
 
   line-height: 29px;
+  
 `
 
 const NavButton = (props) => {

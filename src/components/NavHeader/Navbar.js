@@ -8,11 +8,11 @@ import { mediaQueries } from '../../shared/config';
 /* This should always be on top (z-index) */
 const NavbarContainer = styled.div`
   z-index: 2000;
-  margin: auto;
+  padding-left: 20%;
 
   ${mediaQueries.notTablet} {
     position: fixed;
-    top: 58px;
+    top: 40px;
     width: 100%;
   }
   ${mediaQueries.tablet} {
@@ -23,17 +23,12 @@ const NavbarContainer = styled.div`
 `;
 
 const sections = [
-  'LETTER',
-  'A CLOSER LOOK',
-  'NEWS',
-  'SPORTS',
-  'ARTS',
-  'OPINION',
-  'THE QUAD',
-  'MULTIMEDIA',
-  'PRIME',
-  '-30-',
-  'ABOUT',
+  'EXPERIENCE',
+  'PROJECTS',
+  'EDUCATION',
+  'SKILLS',
+  'INTERESTS',
+  'CONTACT',
 ];
 const Navbar = (props) => {
   const [visibleSection, setVisibleSection] = useState('');

@@ -21,8 +21,8 @@ export default function ArticleGrid(props){
         height: fit-content;
         min-height: 90%;
         margin: auto;
-        background-color: #${getBackgroundColor(props.color)};
-        color: #${getTextColor(props.color)};
+        background-color: #ffffff;
+        color: #013b5a;
         padding: 1em;
         border: 1px solid #013B5A;
         box-sizing: border-box;
@@ -49,9 +49,8 @@ export default function ArticleGrid(props){
         text-align: center;
         padding-left: .5em;
         padding-right: .5em;
-        color: #${getTextColor(props.color)};
+        color: #013b5a;
         font-family: 'Roboto Mono';
-        text-transform: uppercase;
         ${mediaQueries.mobile} {
             font-size: 12px;
         }
@@ -64,7 +63,7 @@ export default function ArticleGrid(props){
         font-weight: 400;
         text-align: center;
         padding: 1em;
-        color: #${getTextColor(props.color)};
+        color: #013b5a;
         border-top: .1em solid #013B5A;
         font-family: 'Roboto Mono';
         ${mediaQueries.mobile} {
@@ -80,7 +79,7 @@ export default function ArticleGrid(props){
                     <a href={props.article_url}>
                         <Image src={props.article_image}></Image>
                     </a>
-                    <ByLine> BY {props.article_byline} </ByLine>
+                    <ByLine> {props.article_byline} </ByLine>
                     <a href={props.article_url}>
                         <Title> {props.article_title} </Title>
                     </a>
