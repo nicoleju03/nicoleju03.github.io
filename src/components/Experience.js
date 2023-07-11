@@ -49,7 +49,7 @@ const Title = styled.div`
   }
 `
 
-export default function EditorLetter(props) {
+export default function Experience(props) {
   return (
     <div>
       <Container>
@@ -83,12 +83,11 @@ export default function EditorLetter(props) {
           <Content style={{ margin: "auto" }}>
             Oct 2022 - Present
             <br></br><br></br>
-            <Title>SWE Intern, Nasa Jet Propulsion Laboratory</Title>
-            <ul type='circle'>
-              <li>I work with a team to develop and maintain internal research sites while providing supporting documentation. 
+            <Title>SWE Intern, NASA Jet Propulsion Laboratory</Title>
+            <br></br>
+              I work with a team to develop and maintain internal research sites while providing supporting documentation. 
               I design and construct research proposal forms that write to a backend API, and use Django to develop the Portal’s administrative interface.
-              </li>
-            </ul>
+            <br></br>
           </Content>
         </Text>
       </Container>

@@ -9,7 +9,10 @@ import SectionHeader from "./components/SectionHeader";
 import { HashRouter } from 'react-router-dom';
 import NavHeader from "./components/NavHeader";
 import ArticleGrid from "./components/ArticleGrid";
+import SkillsGrid from "./components/SkillsGrid";
 import Experience from "./components/Experience";
+import Education from "./components/Education";
+
 import About from "./components/About";
 import mobileBackgroud from "./images/mobilebackground.svg";
 import { mediaQueries } from "./shared/config";
@@ -85,8 +88,8 @@ const a = styled.div`
               <b>Email:</b> nicoleju03@gmail.com <br></br><br></br>
               <b>LinkedIn:</b> <a href = "https://www.linkedin.com/in/nicoleju03/" target="_blank" style={{color:"#A3C1AD"}}>https://www.linkedin.com/in/nicoleju03/</a> <br></br><br></br>
               <b>GitHub:</b> <a href = "https://github.com/nicoleju03" target="_blank" style={{color:"#A3C1AD"}}>https://github.com/nicoleju03</a> <br></br><br></br>
-              Hello! I am a 3rd year computer science major at UCLA, and I am very excited to pursue software development (anything from games to websites to apps)! I am currently a software engineering intern at JPL and an undergraduate researcher for UCLA's Medication Reconciliation Group. 
-              <br></br><br></br>I love creating and exploring; my projects at UCLA range from building a complex game of Battleship to analyzing the factors that contribute to happiness around the world.  I'm looking forward to building upon my skills through further industry and project experience.
+              Hello! I am a 3rd year computer science major at UCLA, and I am very excited to pursue software development (anything from games to websites to apps). I am currently a software engineering intern at JPL and an undergraduate researcher for UCLA's Medication Reconciliation Group. 
+              <br></br><br></br>I love creating and exploring; my projects at UCLA range from building a complex game of Battleship to analyzing the factors that contribute to happiness around the world.  I am looking forward to building upon my skills through further industry and project experience.
 
 ​
             </Intro>
@@ -101,39 +104,15 @@ const a = styled.div`
           </div>
           <div id="EDUCATION">
             <SectionHeader text="Education"></SectionHeader>
-            <ArticleGrid articles={data.news}></ArticleGrid>
+            <Education></Education>
           </div>
           <div id="SKILLS">
             <SectionHeader text="Skills"></SectionHeader>
-            <ArticleGrid articles={data.sports}></ArticleGrid>
+            <SkillsGrid articles={data.sports}></SkillsGrid>
           </div>
           <div id="INTERESTS">
             <SectionHeader text="Interests"></SectionHeader>
             <ArticleGrid articles={data.arts}></ArticleGrid>
-          </div>
-          <div id="Contact">
-            <SectionHeader text="OPINION"></SectionHeader>
-            <ArticleGrid articles={data.opinion}></ArticleGrid>
-          </div>
-          <div id="THE QUAD">
-            <SectionHeader text="THE QUAD"></SectionHeader>
-            <ArticleGrid articles={data.quad}></ArticleGrid>
-          </div>
-          <div id="MULTIMEDIA">
-            <SectionHeader text="MULTIMEDIA"></SectionHeader>
-          <ArticleGrid articles={data.multimedia}></ArticleGrid>
-          </div>
-          <div id="PRIME">
-            <SectionHeader text="PRIME"></SectionHeader>
-            <ArticleGrid articles={data.prime}></ArticleGrid>
-          </div>          
-          <div id="-30-">
-            <SectionHeader text="-30- COLUMNS"></SectionHeader>
-            <ArticleGrid articles={data.thirty}></ArticleGrid>
-          </div>
-          <div id="ABOUT">
-            <SectionHeader text="ABOUT"></SectionHeader>
-            <About about={data.about}></About>
           </div>
         </Container>
       </HashRouter>

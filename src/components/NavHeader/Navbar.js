@@ -28,7 +28,6 @@ const sections = [
   'EDUCATION',
   'SKILLS',
   'INTERESTS',
-  'CONTACT',
 ];
 const Navbar = (props) => {
   const [visibleSection, setVisibleSection] = useState('');

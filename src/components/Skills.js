@@ -14,17 +14,16 @@ function getTextColor(color){
 
 }
 
-export default function ArticleCard(props){
+export default function Skills(props){
     const OuterContainer = styled.div`
         position: relative;
         width: 100%;
         height: fit-content;
         min-height: 90%;
         margin: auto;
-        background-color: #ffffff;
+        background-color: #E1EBEE;
         color: #013b5a;
         padding: 1em;
-        border: 1px solid #013B5A;
         box-sizing: border-box;
 
         a {
@@ -35,36 +34,34 @@ export default function ArticleCard(props){
 
     const Image = styled.img`
         height: 60%;
-        width: 100%;
+        width: 60%;
+        margin: auto;
         display: block;
         object-fit: scale-down;
-        border-bottom: .1em solid #013B5A;
+        border-radius: 50%;
     `;
 
 
     const ByLine = styled.p`
         display: block;
-        font-size: 16px;
+        font-size: 30px;
         font-weight: 400;
         text-align: center;
         padding-left: .5em;
         padding-right: .5em;
         color: #013b5a;
-        font-family: 'Roboto Mono';
+        font-family: Bacasime Antique;
         ${mediaQueries.mobile} {
-            font-size: 12px;
+            font-size: 20px;
         }
-
       `;
 
     const Title = styled.a`
         display: block;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
         text-align: center;
-        padding: 1em;
         color: #013b5a;
-        border-top: .1em solid #013B5A;
         font-family: 'Roboto Mono';
         ${mediaQueries.mobile} {
             font-size: 12px;
@@ -76,18 +73,16 @@ export default function ArticleCard(props){
         <div>
             {props.article_title != 'blank' &&
                 <OuterContainer>
-                    <a href={props.article_url} target="_blank">
+                    <a href={props.article_url}>
                         <Image src={props.article_image}></Image>
                     </a>
                     <ByLine> {props.article_byline} </ByLine>
-                    <a href={props.article_url} target="_blank">
+                    <a href={props.article_url}>
                         <Title> {props.article_title} </Title>
                     </a>
                 </OuterContainer>
             }
         </div>
-        
-
 
     )
 }

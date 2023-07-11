@@ -56,7 +56,7 @@ export default function ArticleGrid(props){
     console.log(props.articles)
     return(
         <OuterContainer>
-            (click each box to read more)<br></br><br></br>
+            (click each box to learn more)<br></br><br></br>
             {props.articles.length > 1 &&
             <div>
             <Grid>
