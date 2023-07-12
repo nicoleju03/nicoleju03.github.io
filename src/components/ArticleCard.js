@@ -38,7 +38,6 @@ export default function ArticleCard(props){
         width: 100%;
         display: block;
         object-fit: scale-down;
-        border-bottom: .1em solid #013B5A;
     `;
 
 

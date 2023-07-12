@@ -10,6 +10,7 @@ import { HashRouter } from 'react-router-dom';
 import NavHeader from "./components/NavHeader";
 import ArticleGrid from "./components/ArticleGrid";
 import SkillsGrid from "./components/SkillsGrid";
+import Interests from "./components/Interests";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 
@@ -112,7 +113,7 @@ const a = styled.div`
           </div>
           <div id="INTERESTS">
             <SectionHeader text="Interests"></SectionHeader>
-            <ArticleGrid articles={data.arts}></ArticleGrid>
+            <Interests articles={data.sports}></Interests>
           </div>
         </Container>
       </HashRouter>
