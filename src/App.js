@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import background from "./images/background.svg";
-import MyMap from './components/Map/Interactive';
 import SectionHeader from "./components/SectionHeader";
 import { HashRouter } from 'react-router-dom';
 import NavHeader from "./components/NavHeader";
@@ -14,7 +10,6 @@ import Interests from "./components/Interests";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 
-import About from "./components/About";
 import mobileBackgroud from "./images/mobilebackground.svg";
 import { mediaQueries } from "./shared/config";
 
@@ -70,11 +65,6 @@ const Intro = styled.div`
   font-family: Roboto Mono, sans-serif;
   font-size: 18;
 `;
-
-const a = styled.div`
-  color: #A3C1AD;
-`;
-
 
   return data && (
     <div className="App" >

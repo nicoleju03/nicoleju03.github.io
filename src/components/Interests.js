@@ -18,7 +18,7 @@ const Grid = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* grid-auto-rows: 30em;     */
-    row-gap: 6em;
+    row-gap: 5em;
     column-gap: 2em;
 
     ${mediaQueries.mobile} {
@@ -55,6 +55,7 @@ padding-bottom:5%;
 export default function Interests(props){
     return(
         <OuterContainer>
+            <br></br>
             {props.articles.length > 1 &&
             <div>
             <Grid>
@@ -73,7 +74,7 @@ export default function Interests(props){
                     article_image="../baddy.png"
                 />
                 <ArticleCard
-                    article_title="I love traveling with family and friends and trying new things. My favorite places I've been too
+                    article_title="I love traveling with family and friends and trying new things. My favorite places I've been to
                     are Machu Picchu, Hawaii, and Brazil. But riding camels in Cabo was very unforgettable!"
                     article_byline="Traveling"
                     color = "white"
@@ -113,6 +114,8 @@ export default function Interests(props){
                             article_url={props.articles[0].article_url}/>
             </Grid>
             }
+            <br></br>
+            <br></br>
         </OuterContainer>
 
     )

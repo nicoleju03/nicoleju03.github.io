@@ -57,12 +57,10 @@ export default function Education(props) {
           <Content style={{ margin: "auto" }}>
             Sept 2021 - June 2025
             <br></br><br></br>
-            <Title>B.S. (in progress), UCLA Computer Science</Title>
-            <ul type='circle'>
-              <li>I am currently studying computer science at the University of California, Los Angeles: UCLA. 
+            <Title>B.S. (in progress), UCLA Computer Science</Title><br></br>
+              I am currently studying computer science at the University of California, Los Angeles: UCLA. 
                 My cumulative and major GPA are 4.0/4.0. My coursework has included: Object-Oriented Programming, Data Structures and Algorithms, 
-                Algorithms and Complexity, Software Construction, Operating Systems, Logic Design of Digital Systems, Data Science, and Machine Learning.</li>
-            </ul>
+                Algorithms and Complexity, Software Construction, Operating Systems, Logic Design of Digital Systems, Data Science, and Machine Learning.
           </Content>
         </Text>
       </Container>
@@ -71,12 +69,10 @@ export default function Education(props) {
           <Content style={{ margin: "auto" }}>
             Aug 2017 - June 2021
             <br></br><br></br>
-            <Title>Diploma, Amador Valley High School</Title>
-            <ul type='circle'>
-              <li>I attended Amador Valley High School and achieved a 4.5 weighted GPA (4.0 unweighted) and a 1570 / 1600 SAT score. 
+            <Title>Diploma, Amador Valley High School</Title><br></br>
+              I attended Amador Valley High School and achieved a 4.5 weighted GPA (4.0 unweighted) and a 1570 / 1600 SAT score. 
                 I took several useful courses, including AP Computer Science and AP Statistics. I excelled in my classes and received 
-                AP Scholar with Distinction and National Merit Scholarship.</li>
-            </ul>
+                AP Scholar with Distinction and National Merit Scholarship.
           </Content>
         </Text>
       </Container>
