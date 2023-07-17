@@ -73,7 +73,7 @@ const Intro = styled.div`
           <NavHeader />
           <Name>Nicole Ju</Name>
           <div>
-            <Image src="../pic.png" />
+            <Image src="../betterpic.png" />
             <Intro>
               <b>Phone:</b> (925) 520-5568 <br></br><br></br>
               <b>Email:</b> nicoleju03@gmail.com <br></br><br></br>

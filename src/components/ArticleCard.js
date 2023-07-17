@@ -75,7 +75,6 @@ export default function ArticleCard(props){
         <div>
             {props.article_title != 'blank' &&
                 <OuterContainer>
-                    hi
                     <a href={props.article_url} target="_blank">
                         <Image src={props.article_image}></Image>
                     </a>
