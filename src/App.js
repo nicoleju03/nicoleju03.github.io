@@ -77,10 +77,12 @@ const Intro = styled.div`
             <Intro>
               <b>Phone:</b> (925) 520-5568 <br></br><br></br>
               <b>Email:</b> nicoleju03@gmail.com <br></br><br></br>
-              <b>LinkedIn:</b> <a href = "https://www.linkedin.com/in/nicoleju03/" target="_blank" style={{color:"#A3C1AD"}}>https://www.linkedin.com/in/nicoleju03/</a> <br></br><br></br>
-              <b>GitHub:</b> <a href = "https://github.com/nicoleju03" target="_blank" style={{color:"#A3C1AD"}}>https://github.com/nicoleju03</a> <br></br><br></br>
-              Hello! I am a 3rd year computer science major at UCLA, and I am very excited to pursue software development (anything from games to websites to apps). I am currently a software engineering intern at JPL and an undergraduate researcher for UCLA's Medication Reconciliation Group. 
-              <br></br><br></br>I love creating and exploring; my projects at UCLA range from building a complex game of Battleship to analyzing the factors that contribute to happiness around the world.  I am looking forward to building upon my skills through further industry and project experience.
+              <b>LinkedIn:</b> <a href = "https://www.linkedin.com/in/nicoleju03/" target="_blank" style={{color:"#A3C1AD"}} rel="noreferrer">https://www.linkedin.com/in/nicoleju03/</a> <br></br><br></br>
+              <b>GitHub:</b> <a href = "https://github.com/nicoleju03" target="_blank" style={{color:"#A3C1AD"}} rel="noreferrer">https://github.com/nicoleju03</a> <br></br><br></br>
+              Hello! I am a 4th year computer science major at UCLA interested in backend development and web/mobile applications. I am currently a software engineering intern at Gusto, helping to develop and modify API endpoints for partners to build Gusto's
+              functionality into their own applications.
+              <br></br><br></br>I love creating and exploring; my projects at UCLA range from a mental health mobile application to a software tool that identifies discrepancies in medication lists. 
+              I am looking forward to building upon my skills through further industry and project experience.
 
 ​
             </Intro>
