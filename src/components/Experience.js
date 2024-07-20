@@ -55,6 +55,18 @@ export default function Experience(props) {
       <Container>
         <Text>
           <Content style={{ margin: "auto" }}>
+            June 2024 - Present
+            <br></br><br></br>
+            <Title>Software Engineering Intern, Gusto Inc. </Title><br></br>
+             As part of the Gusto Embedded Payroll team, I use Ruby on Rails to develop API endpoints for partners to incorporate Gusto’s payroll functionality into their own applications.
+             In particular, my project is to build support for contractor-only companies. I leverage the MVC framework to edit models, views, and controllers.
+             For instance, I am working creating a net-new PUT endpoint for company update requests.
+          </Content>
+        </Text>
+      </Container>
+      <Container>
+        <Text>
+          <Content style={{ margin: "auto" }}>
             May 2023 - Present
             <br></br><br></br>
             <Title>Undergraduate Researcher, Medication Reconciliation Research Group</Title><br></br>

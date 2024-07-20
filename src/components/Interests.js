@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { mediaQueries } from '../shared/config';
-import ArticleCard from "./ArticleCard";
+import InterestArticleCard from "./InterestArticleCard";
 
 const OuterContainer = styled.div`
     max-width: 100vw;
@@ -59,42 +59,42 @@ export default function Interests(props){
             {props.articles.length > 1 &&
             <div>
             <Grid>
-                <ArticleCard
+                <InterestArticleCard
                     article_title="This is my dog, Addie. I love taking her on our weekly family hikes. 
                     She enjoys peaches, squirrel chasing, and tummy rubs :)"
                     article_byline="Addie"
                     color = "white"
                     article_image="../addie.png"
                 />
-                <ArticleCard
+                <InterestArticleCard
                     article_title="I have played competitive badminton for 12 years, and it has become a very important part of my life.
                     This summer, I am excited to compete in US Open and the World University Games in Chengdu, China."
                     article_byline="Badminton"
                     color = "white"
                     article_image="../baddy.png"
                 />
-                <ArticleCard
+                <InterestArticleCard
                     article_title="I love traveling with family and friends and trying new things. My favorite places I've been to
                     are Machu Picchu, Hawaii, and Brazil. But riding camels in Cabo was very unforgettable!"
                     article_byline="Traveling"
                     color = "white"
                     article_image="../camel.png"
                 />
-                <ArticleCard
+                <InterestArticleCard
                     article_title="I love trying new foods/drinks around LA and the Bay Area. Matcha is my favorite drink,
                     so I'm on the hunt for the best matcha spots. I hope to visit Japan one day to try both their matcha and sushi."
                     article_byline="Food Adventures"
                     color = "white"
                     article_image="../matcha.png"
                 />
-                <ArticleCard
+                <InterestArticleCard
                     article_title="I have a collection of around 40 enamel pins. I try to collect fun pins from new places that I go to;
                     these minion pins are from Universal Studios, and I also have a flower pin from the Met in NYC."
                     article_byline="Enamel Pins"
                     color = "white"
                     article_image="../pins.png"
                 />
-                <ArticleCard
+                <InterestArticleCard
                     article_title="Sunsets never fail to mesmerize me; my dad and I love watching sunsets from beaches or mountaintops.
                     This particular sunset is from the top of Crater Lake in Oregon."
                     article_byline="Sunsets"
@@ -106,8 +106,8 @@ export default function Interests(props){
             }
             {props.articles.length <= 1 &&
             <Grid>
-                <ArticleCard article_title="blank"/>
-                <ArticleCard article_title={props.articles[0].article_title}
+                <InterestArticleCard article_title="blank"/>
+                <InterestArticleCard article_title={props.articles[0].article_title}
                             article_byline={props.articles[0].article_byline}
                             color = {props.articles[0].color}
                             article_image={props.articles[0].article_image}

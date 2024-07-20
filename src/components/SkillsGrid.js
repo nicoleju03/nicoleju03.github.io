@@ -79,6 +79,18 @@ export default function ArticleGrid(props){
                 />
                 <Skills
                     article_title="Advanced"
+                    article_byline="JavaScript & React.js"
+                    color = "white"
+                    article_image="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+                />
+                <Skills
+                    article_title="Advanced"
+                    article_byline="Ruby on Rails"
+                    color = "white"
+                    article_image="https://yt3.googleusercontent.com/KUq46Xaf58rAGQQimOUshgpW8ksk-W3gtJ1XoOeIfgKHITBTea9qNKGXfaPt8SlEPZT93zw0Vq4=s900-c-k-c0x00ffffff-no-rj"
+                />
+                <Skills
+                    article_title="Advanced"
                     article_byline="Bash"
                     color = "white"
                     article_image="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/2048px-Bash_Logo_Colored.svg.png"
@@ -88,12 +100,6 @@ export default function ArticleGrid(props){
                     article_byline="C"
                     color = "white"
                     article_image="https://www.seekpng.com/png/detail/429-4296796_we-are-passionate-technologists-c-language-logo-png.png"
-                />
-                <Skills
-                    article_title="Advanced"
-                    article_byline="JavaScript & React.js"
-                    color = "white"
-                    article_image="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
                 />
                 <Skills
                     article_title="Advanced"

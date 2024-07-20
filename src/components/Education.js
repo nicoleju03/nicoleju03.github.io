@@ -59,8 +59,7 @@ export default function Education(props) {
             <br></br><br></br>
             <Title>B.S. (in progress), UCLA Computer Science</Title><br></br>
               I am currently studying computer science at the University of California, Los Angeles: UCLA. 
-                My cumulative and major GPA are 4.0/4.0. My coursework has included: Object-Oriented Programming, Data Structures and Algorithms, 
-                Algorithms and Complexity, Software Construction, Operating Systems, Logic Design of Digital Systems, Data Science, and Machine Learning.
+                My cumulative and major GPA are 4.0/4.0. My completed coursework includes: Object-Oriented Programming, Data Structures and Algorithms, Algorithms and Complexity, Software Construction, Artificial Intelligence, Machine Learning, Data Science, Operating Systems, Computer Networks, Logic Design of Digital Systems, Computer Systems Architecture, Theory of Computing, and Embedded Development.
           </Content>
         </Text>
       </Container>

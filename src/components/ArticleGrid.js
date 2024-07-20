@@ -61,18 +61,27 @@ export default function ArticleGrid(props){
             <div>
             <Grid>
                 <ArticleCard
+                    article_title="I am currently working on a year-long project for the nonprofit organization IDONTMIND, dedicated to spreading mental health awareness. We are using React Native and MongoDB to build a mobile
+                    application with resources like mental health articles, an in-app journal, and daily checkins. One of my biggest tasks is implementing content bookmarking and foldering via controller functions that interact
+                    with the database. I integrate such functionality with the frontend, allowing users to save and organize various resources."
+                    article_byline="IDONTMIND"
+                    color = "white"
+                    article_image="https://aliviohealth.com/wp-content/uploads/2022/07/Managing-Mental-Health-During-COVID-19.jpg"
+                    article_url="https://github.com/lablueprint/idontmind/"
+                />
+                <ArticleCard
+                    article_title="I use Python and natural language processing to identify discrepancies in medication lists and display results to a web app. My team utilizes ANTLR to parse prescriptions based on defined lexer/parser rules and extract elements for comparison (dosage, etc.). In a recent project, I flagged manually matched medications by inspecting an HTTP response and rendering a POST request with altered entries."
+                    article_byline="Medication Reconciliation"
+                    color = "white"
+                    article_image="https://images.squarespace-cdn.com/content/v1/65c3bc3c5f3c855311eba919/1707439017532-89FWNTT8QOV6SX81N5E0/iStock-1211161734.jpg"
+                    article_url="https://github.com/med-rec-at-ucla/mr-grammars?tab=readme-ov-file"
+                />
+                <ArticleCard
                     article_title="With a team, I created a review service for UCLA's dining halls. Users can submit reviews (which include photos, descriptions, and star ratings), view and upvote other people's reviews, and access a dashboard of their past reviews. I mainly worked on the review form and allowing users to write data to a backend database (we used Firebase), as well as displaying data from the backend to various pages on the site."
                     article_byline="BruinYelp"
                     color = "white"
                     article_image="https://portal.housing.ucla.edu/sites/default/files/media/images/Bruin%20Plate_happenings.png"
                     article_url="https://github.com/andyz2021/BruinYelp"
-                />
-                <ArticleCard
-                    article_title="I constructed a complex Battleship game with an interactive feature that allows users to play, as well as a computerized version. I utilized data structures to store and update game objects. I also designed a high-level computer player with strategies to maximize its win rate."
-                    article_byline="Battleship"
-                    color = "white"
-                    article_image="https://render.fineartamerica.com/images/rendered/default/greeting-card/images-medium-5/world-war-two-battleship-cartoon-aloysius-patrimonio.jpg?&targetx=0&targety=-100&imagewidth=700&imageheight=700&modelwidth=700&modelheight=500&backgroundcolor=FCFDFC&orientation=0"
-                    article_url="https://github.com/nicoleju03/Battleship-CS32-Project-3-"
                 />
                 <ArticleCard
                     article_title="My team and I used R and Python to investigate various factors that contribute to a country's happiness, such as political leaders and Covid-19 deaths. We performed linear regression and statistical tests to study the correlation between such factors and happiness scores. We posted our findings and visualizations on Medium."

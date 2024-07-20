@@ -14,7 +14,7 @@ function getTextColor(color){
 
 }
 
-export default function ArticleCard(props){
+export default function InterestArticleCard(props){
     const OuterContainer = styled.div`
         position: relative;
         width: 100%;
@@ -29,11 +29,6 @@ export default function ArticleCard(props){
 
         a {
             text-decoration: none;
-        }
-
-        &:hover {
-            opacity: 0.5;
-            background-color: #C8C8C8;
         }
     `;
 
