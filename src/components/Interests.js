@@ -60,9 +60,9 @@ export default function Interests(props){
             <div>
             <Grid>
                 <InterestArticleCard
-                    article_title="This is my dog, Addie. I love taking her on our weekly family hikes. 
+                    article_title="This is my dog, Adie. I love taking her on our weekly family hikes. 
                     She enjoys peaches, squirrel chasing, and tummy rubs :)"
-                    article_byline="Addie"
+                    article_byline="Adie"
                     color = "white"
                     article_image="../addie.png"
                 />

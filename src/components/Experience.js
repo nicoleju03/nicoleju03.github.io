@@ -55,12 +55,16 @@ export default function Experience(props) {
       <Container>
         <Text>
           <Content style={{ margin: "auto" }}>
-            June 2024 - Present
+            June 2024 - Sept 2024
             <br></br><br></br>
             <Title>Software Engineering Intern, Gusto Inc. </Title><br></br>
-             As part of the Gusto Embedded Payroll team, I use Ruby on Rails to develop API endpoints for partners to incorporate Gusto’s payroll functionality into their own applications.
-             In particular, my project is to build support for contractor-only companies. I leverage the MVC framework to edit models, views, and controllers.
-             For instance, I am working creating a net-new PUT endpoint for company update requests.
+            As part of Gusto's Embedded Payroll team, I used Ruby on Rails to develop API endpoints 
+            for partners to incorporate Gusto’s payroll functionality into their own applications. 
+            In particular, I built support for contractor-only companies, immediately unblocking around 
+            15,000 partner companies. I leveraged the MVC framework to edit models, views, and controllers. 
+            For instance, I enabled contractor-only company creation through POST request parameters and 
+            implemented a new PUT endpoint for company updates. I also worked on developing a new API for 
+            contractor documents, including actions like accessing, signing, and downloading forms.
           </Content>
         </Text>
       </Container>
@@ -70,44 +74,39 @@ export default function Experience(props) {
             May 2023 - Present
             <br></br><br></br>
             <Title>Undergraduate Researcher, Medication Reconciliation Research Group</Title><br></br>
-              I use Python and natural language processing to help develop an algorithm that identifies discrepancies in patient medication lists.
-                We parse prescriptions based on defined lexer and parser rules, then compare elements (dosage, ingredients, etc).
+            I use Python and natural language processing to identify discrepancies in medication lists and display 
+            results to a Heroku application. My team utilizes ANTLR to parse prescriptions based on defined lexer/parser 
+            rules and extract elements for comparison (dosage, ingredients, etc.). In one project, I flagged manually matched 
+            medications by inspecting an HTTP response and rendering a POST request with altered entries. I have also worked 
+            on visualizing our algorithm's performance and accuracy using Python's Streamlit library.
           </Content>
         </Text>
       </Container>
       <Container>
         <Text>
           <Content style={{ margin: "auto" }}>
-            May 2023 - Present
+            May 2023 - June 2024
             <br></br><br></br>
             <Title>External Sites Director, UCLA Daily Bruin</Title><br></br>
-              I lead a team to construct 10-15 web pages a year for UCLA’s online newspaper, deploying pages on AWS.
-                We implement Figma designs by creating styled React components and pulling article data/images from a Docker API.
+            I led a team of 12 to construct 10-15 web pages a year for UCLA’s online newspaper, deploying pages to AWS. 
+            We used JavaScript and CSS to implement Figma designs, creating styled React components that pulled from
+            the backend database via an API. In addition to developing web pages, I attended budget, content, and design 
+            meetings to manage Daily Bruin’s production workflow and pitch new project ideas.
           </Content>
         </Text>
       </Container>
       <Container>
         <Text>
           <Content style={{ margin: "auto" }}>
-            Oct 2022 - Present
+            Oct 2022 - Sept 2023
             <br></br><br></br>
             <Title>SWE Intern, NASA Jet Propulsion Laboratory</Title>
             <br></br>
-              I work with a team to develop and maintain internal research sites while providing supporting documentation. 
-              I design and construct research proposal forms that write to a backend API, and use Django to develop the Portal’s administrative interface.
+            I utilized Python and JavaScript to develop, test, and maintain JPL's Internally Managed Research 
+            Portal and research sites. For instance, I created research proposal forms, with independent modals 
+            and complex error validation, that updated the backend via an API. In other projects, I used Django 
+            to manage the Portal's SQL database, constructing Models and implementing features for the admin interface.
             <br></br>
-          </Content>
-        </Text>
-      </Container>
-      <Container>
-        <Text>
-          <Content style={{ margin: "auto" }}>
-            June 2020 - July 2020
-            <br></br><br></br>
-            <Title>Social Media Marketing Intern, InMyShow USA</Title><br></br>
-              I pioneered the company's first professional TikTok profile and implemented 
-                marketing strategies to reach consumers and direct them to the company website. I grew the 
-                company's social media presence, accumulating over 4500 followers and 350K views.
           </Content>
         </Text>
       </Container>

@@ -29,10 +29,6 @@ function App() {
     background-size: cover;
     height: fit-content;
 
-    ${mediaQueries.mobile} {
-      background-image: url(${mobileBackgroud});
-    }
-
   `;
 
   const Name = styled.div`
@@ -49,10 +45,19 @@ function App() {
   const Image = styled.img`
   height: 30%;
   width: 30%;
-  display:inline-block;  
+  display: inline-block;  
   object-fit: scale-down;
-  padding-top: 7%;
+  padding-top: 12%;
   padding-bottom:5%;
+
+  ${mediaQueries.mobile} {
+    display: block;
+    margin: auto;
+    height: 40%;
+    width: 40%;
+    
+  }
+  
 `;
 
 const Intro = styled.div`
@@ -63,7 +68,15 @@ const Intro = styled.div`
   padding-left: 10%;
   margin: auto;
   font-family: Roboto Mono, sans-serif;
-  font-size: 18;
+  font-size: 18px;
+
+  ${mediaQueries.mobile} {
+    margin: auto;
+    font-size: 12px;
+    float: none;
+    padding-left: 0;
+    width: 70%;
+  }
 `;
 
   return data && (
@@ -79,11 +92,10 @@ const Intro = styled.div`
               <b>Email:</b> nicoleju03@gmail.com <br></br><br></br>
               <b>LinkedIn:</b> <a href = "https://www.linkedin.com/in/nicoleju03/" target="_blank" style={{color:"#87A96B"}} rel="noreferrer">https://www.linkedin.com/in/nicoleju03/</a> <br></br><br></br>
               <b>GitHub:</b> <a href = "https://github.com/nicoleju03" target="_blank" style={{color:"#87A96B"}} rel="noreferrer">https://github.com/nicoleju03</a> <br></br><br></br>
-              Hello, I am an incoming 4th year computer science student at UCLA interested in backend software development! I have experience in C++, Java, Python, React/JavaScript, and Ruby/Rails. 
-              My projects range from a mental health mobile application to a software tool that identifies discrepancies in medication lists. I recently completed a year-long software engineering 
-              internship at JPL, where I helped develop and maintain JPL's internal research site. This summer, I am so excited to be interning at Gusto on the Embedded Payroll team, developing API 
-              endpoints for partners to incorporate Gusto functionality into their own applications!
-              <br></br><br></br>I love creating and exploring, and I am looking forward to building upon my skills through further industry and project experience.
+              Hello, I am 4th year computer science student at UCLA interested in software engineering. I have project and industry experience in C++, C, Python, React/JavaScript, and Ruby/Rails. 
+              My projects range from a full-stack mental health mobile application to a software tool that identifies discrepancies in medication lists. I recently completed a software engineering 
+              internship at Gusto and had an amazing experience! 
+              <br></br><br></br>Moving forward, I'm excited to pursue full-time software engineering careers where I can help develop client-focused products and make a meaningful impact!
 
 
             </Intro>

@@ -61,9 +61,12 @@ export default function ArticleGrid(props){
             <div>
             <Grid>
                 <ArticleCard
-                    article_title="I am currently working on a year-long project for the nonprofit organization IDONTMIND, dedicated to spreading mental health awareness. We are using React Native and MongoDB to build a mobile
-                    application with resources like mental health articles, an in-app journal, and daily checkins. One of my biggest tasks is implementing content bookmarking and foldering via controller functions that interact
-                    with the database. I integrate such functionality with the frontend, allowing users to save and organize various resources."
+                    article_title="I worked with a team of ~12 developers and designers on a year-long project for IDONTMIND, 
+                    a nonprofit organization dedicated to spreading mental health awareness and resources. We used React Native, 
+                    MongoDB, and Express to build a mobile application with resources like mental health articles, an in-app journal, 
+                    and daily checkins. One of my largest tasks was implementing content bookmarking and folder organization via controller 
+                    functions that interacted with the database. I integrated such functionality with the frontend, allowing users to 
+                    save and organize wellness resources."
                     article_byline="IDONTMIND"
                     color = "white"
                     article_image="https://aliviohealth.com/wp-content/uploads/2022/07/Managing-Mental-Health-During-COVID-19.jpg"
@@ -77,6 +80,13 @@ export default function ArticleGrid(props){
                     article_url="https://github.com/med-rec-at-ucla/mr-grammars?tab=readme-ov-file"
                 />
                 <ArticleCard
+                    article_title="I used Pandas and NumPy to preprocess Goodreads data and build a search engine for users to compile a list of liked books. In particular, I employed scikit-learn’s TfidfVectorizer and cosine similarity to determine book titles that matched the user query. Then, based on the user's liked books, I filtered out other users with similar preferences and recommended books that those user's rated highly."
+                    article_byline="ML Book Recommendation System"
+                    color = "white"
+                    article_image="https://miro.medium.com/v2/resize:fit:460/1*veqSWuqvOJ5QxzFwd2lCXw.jpeg"
+                    article_url="https://github.com/nicoleju03/book_recs"
+                />
+                <ArticleCard
                     article_title="With a team, I created a review service for UCLA's dining halls. Users can submit reviews (which include photos, descriptions, and star ratings), view and upvote other people's reviews, and access a dashboard of their past reviews. I mainly worked on the review form and allowing users to write data to a backend database (we used Firebase), as well as displaying data from the backend to various pages on the site."
                     article_byline="BruinYelp"
                     color = "white"
@@ -87,15 +97,8 @@ export default function ArticleGrid(props){
                     article_title="My team and I used R and Python to investigate various factors that contribute to a country's happiness, such as political leaders and Covid-19 deaths. We performed linear regression and statistical tests to study the correlation between such factors and happiness scores. We posted our findings and visualizations on Medium."
                     article_byline="World Happiness"
                     color = "white"
-                    article_image="https://ggsc.s3.amazonaws.com/images/uploads/World_Happiness_Report_Finds_That_Crises_Make_Us_Kinder.jpg"
+                    article_image="https://memorialswordandshield.com/wp-content/uploads/2022/08/960x0.jpg"
                     article_url="https://ucladatares.medium.com/effects-of-covid-19-on-the-world-happiness-report-f5dcca9c1012"
-                />
-                <ArticleCard
-                    article_title="I completed this project as part of DataBlog, a branch of UCLA's data science club, DataRes. My team and I used R and Python to analyze the factors that contribute to Bobby Flay's success on his cooking show, as well as create visualizations of our data. We published our findings on Medium."
-                    article_byline="The Secret to Beating Bobby Flay"
-                    color = "white"
-                    article_image="https://www.longislandpress.com/wp-content/uploads/2019/10/81KJRcaM-CL._RI_-e1570474601182.jpg"
-                    article_url="https://ucladatares.medium.com/the-secret-to-beating-bobby-flay-aae2d90fdd52"
                 />
             </Grid>
             </div>
